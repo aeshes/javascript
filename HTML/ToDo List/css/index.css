@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+.header {
+	background-color: #f44336;
+	padding: 30px 40px;
+	color: white;
+	text-align: center;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li{
+	cursor: pointer;
+	padding: 12px 8px 12px 40px;
+	background: #eee;
+	font-size: 18px;
+}
+
+ul li:hover {
+	background: #ddd;
+}
