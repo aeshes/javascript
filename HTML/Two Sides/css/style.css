@@ -1,0 +1,18 @@
+.left, .right {
+	float: left;
+	width: 50%;
+	background: red;
+}
+
+.all {
+	float:left;
+	width: 100%;
+}
+
+/*.all:after {
+	clear: both;
+}*/
+
+.clr {
+	/*clear: both;*/
+}
