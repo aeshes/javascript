@@ -1,0 +1,11 @@
+.main {
+	width: 100px;
+	height: 100px;
+	background: #ae7;
+	color: white;
+	margin: 10px;
+}
+
+.border { border: 5px solid #fa9; }
+.padding { padding: 10px; }
+.border-box { box-sizing: border-box; }
