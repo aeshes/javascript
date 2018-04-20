@@ -1,0 +1,23 @@
+.outer {
+	float:left;
+	width: 300px;
+}
+			
+.sqr {
+	width: 70px;
+	height: 70px;
+	background: red;
+	margin: 5px;
+}
+			
+.fl {
+	float: left;
+}
+			
+.fr {
+	float: right;
+}
+			
+.clr {
+	clear:both;
+}
