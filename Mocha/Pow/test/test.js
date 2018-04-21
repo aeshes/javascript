@@ -1,4 +1,4 @@
-var pow = require("./app/main");
+var pow = require("../app/main");
 
 var assert = require("assert");
 
