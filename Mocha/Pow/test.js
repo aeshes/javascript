@@ -15,5 +15,9 @@ describe("pow", function() {
     it("Exponentiate 3 to the zero equals 1", function() {
         assert.equal(pow(3, 0), 1);
     });
-    
+
+    it("Exponentiation to a negative power results to NaN", function() {
+        assert(isNaN(pow(3, -1)), "pow(3,-1) is not NaN");
+    });
+
 });
