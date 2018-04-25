@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/index.css">
 		<title>ToDo</title>
 	</head>
@@ -9,11 +10,11 @@
 	<body>
 		<div id="hdr" class="header">
 			<h2>My ToDo list</h2>
-			<input id="record" placeholder="New record..." type="text">
-			<span class="add" onclick="addRecord()">Add</span>
+			<input id="input" placeholder="What needs to be done?" type="text">
+			<span class="add" onclick="addTodo()">Add</span>
 		</div>
 
-	<ul id="todo">
+	<ul id="list">
 		<li>Play with cat</li>
 	</ul>
 

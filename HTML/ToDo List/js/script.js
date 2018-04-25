@@ -1,32 +1,40 @@
-function addRecord()
+function addTodo()
 {
-    var text = document.getElementById("record").value;
+    var text = document.getElementById("input").value;
     if (text !== "")
     {
-        var item = createListItem(text);
+        var li = createListItem(text);
 
-        document.getElementById("todo").appendChild(item);
-        document.getElementById("record").value = "";
+        document.getElementById("list").appendChild(li);
+        document.getElementById("input").value = "";
     }
 }
 
 function createListItem(text)
 {
-    var item = document.createElement("li");
-    var node = document.createTextNode(text);
-    item.appendChild(node);
-    item = addCloseButton(item);
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(text));
+    li = addCloseButton(li);
 
-    return item;
+    return li;
 }
 
 function addCloseButton(listItem)
 {
     var span = document.createElement("span");
-    var node = document.createTextNode("\u00D7");
+    var text = document.createTextNode("\u00D7");
+
     span.className = "close";
-    span.appendChild(node);
+    span.appendChild(text);
+    span.onclick = removeItem;
+
     listItem.appendChild(span);
 
     return listItem;
+}
+
+function removeItem(e)
+{
+    var div = this.parentElement;
+    div.style.display = "none";
 }
