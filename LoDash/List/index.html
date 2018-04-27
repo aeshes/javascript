@@ -10,17 +10,18 @@
 
         <script src="../Simple/js/lodash.js"></script>
 
-        <script type="text/template" id="list-template">
+        <script type="text/template" id="list-template2">
             <ul>
-                <% for (var i = 0; i < count; ++i) { %>
-                    <li><%=i%></li>
-                <% } %>
+                <% items.forEach(function(item) { %>
+                    <li><%-item%></li>
+                <% }); %>
             </ul>
         </script>
 
         <script>
-            var tmpl = _.template(document.getElementById("list-template").innerHTML);
-            var result = tmpl({count: 5});
+            var items = ["Мороженое", "Зефирки", "Шоколадки"];
+            var complied = _.template(document.getElementById("list-template2").innerHTML);
+            var result = complied(items);
             document.write(result);
         </script>
 
