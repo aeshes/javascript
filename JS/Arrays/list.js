@@ -10,4 +10,11 @@ function printListLoop(xs) {
     }
 }
 
+function printListRecursive(xs) {
+    if (!xs) return;
+    console.log(xs.value);
+    printListRecursive(xs.next);
+}
+
 printListLoop(list);
+printListRecursive(list);
