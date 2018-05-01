@@ -23,6 +23,18 @@ function printReverseRecursive(xs) {
     }
 }
 
+function printReverseIterative(xs) {
+    let elems = [];
+    for (let iter = xs; iter ; iter = iter.next) {
+        elems.push(iter.value);
+    }
+
+    for (let i = elems.length - 1; i >= 0; --i) {
+        console.log(elems[i]);
+    }
+}
+
 printListLoop(list);
 printListRecursive(list);
 printReverseRecursive(list);
+printReverseIterative(list);
