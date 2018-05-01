@@ -16,5 +16,13 @@ function printListRecursive(xs) {
     printListRecursive(xs.next);
 }
 
+function printReverseRecursive(xs) {
+    if (xs) {
+        printReverseRecursive(xs.next);
+        console.log(xs.value);
+    }
+}
+
 printListLoop(list);
 printListRecursive(list);
+printReverseRecursive(list);
