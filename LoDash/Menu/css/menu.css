@@ -1,0 +1,23 @@
+.menu .title {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu.open .title::before {
+    content: '▼';
+}
+
+.menu .title::before {
+    content: '▶';
+    padding-right: 6px;
+    color: green;
+}
+
+.menu.open ul {
+    display: block;
+}
+
+.menu ul {
+    display: none;
+    margin: 0;
+}
