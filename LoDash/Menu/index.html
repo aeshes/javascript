@@ -19,9 +19,11 @@
 
         <script type="text/template" id="menu-list-template">
             <ul>
-                <% items.forEach(function(item) { %>
-                    <li><%-item%></li>
-                <% }); %>
+                <% for (key in items) { %>
+                    <li>
+                        <a href="#<%-key%>"><%-items[key]%></a>
+                    </li>
+                <% } %>
             </ul>
         </script>
 
@@ -30,13 +32,13 @@
                 title: "Сладости",
                 template: _.template(document.getElementById("menu-template").innerHTML),
                 listTemplate: _.template(document.getElementById("menu-list-template").innerHTML),
-                items: [
-                    "Торт",
-                    "Пончик",
-                    "Пирожное",
-                    "Шоколадка",
-                    "Мороженое"
-                ]
+                items: {
+                    "pie" : "Торт",
+                    "donut" : "Пончик",
+                    "cake" : "Пирожное",
+                    "chocolate" : "Шоколадка",
+                    "icecream" : "Мороженое"
+                }
             });
             document.body.appendChild(menu.getElem());
         </script>
