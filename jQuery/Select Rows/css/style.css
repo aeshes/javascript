@@ -11,3 +11,13 @@ th {
     color : #666666;
     background-color : #dddddd;
 }
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.warning {
+    background-color: red;
+}
