@@ -21,7 +21,7 @@
             <ul>
                 <% for (key in items) { %>
                     <li>
-                        <a href="#<%-key%>" onclick="alert('<%-key%>');">
+                        <a href="#<%-encodeURIComponent(key)%>" onclick="alert('<%-key%>');">
                             <%-items[key]%>
                         </a>
                     </li>
