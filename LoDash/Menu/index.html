@@ -21,7 +21,9 @@
             <ul>
                 <% for (key in items) { %>
                     <li>
-                        <a href="#<%-key%>"><%-items[key]%></a>
+                        <a href="#<%-key%>" onclick="alert('<%-key%>');">
+                            <%-items[key]%>
+                        </a>
                     </li>
                 <% } %>
             </ul>
