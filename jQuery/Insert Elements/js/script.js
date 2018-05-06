@@ -14,4 +14,6 @@
             alert("Advanced jQuery");
         }
     }).insertBefore("#disclaimer");
+
+    $("#no-script").remove();
 }());
