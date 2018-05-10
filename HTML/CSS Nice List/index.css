@@ -1,0 +1,11 @@
+em {
+    display: none;
+}
+
+.cup-standings tr:hover em {
+    display: inline;
+}
+
+.cup-standings tr:hover strong {
+    color: #0088cc;
+}
