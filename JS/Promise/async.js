@@ -18,7 +18,7 @@ function httpGet(url) {
             }
         };
 
-        request.onerror = () => {
+        request.onerror = function(){
             reject(new Error("Network error"));
         };
 
