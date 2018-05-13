@@ -1,13 +1,13 @@
 "use strict";
 
-var XMLHttpRequest = require("xhr2");
+var XMLHttpRequest = require("xhr2");   /* Must be locally installed */
 
 function httpGet(url) {
-    return new Promise((resolve, reject) => {
+    return new Promise(function(resolve, reject) {
         var request = new XMLHttpRequest();
         request.open("GET",url, true);
 
-        request.onload = () => {
+        request.onload = function() {
             if (this.status == 200) {
                 resolve(this.response);
             }
